@@ -193,14 +193,14 @@ ffi_conf.set10('STDC_HEADERS', 1)
 # Misc functions
 #ffi_conf.set('HAVE_ALLOCA', cc.has_function('alloca')) # XXX: unused
 ffi_conf.set('HAVE_MEMCPY', cc.has_function('memcpy'))
-ffi_conf.set('HAVE_MEMFD_CREATE', cc.has_function('memfd_create'))
+#ffi_conf.set('HAVE_MEMFD_CREATE', cc.has_function('memfd_create'))
 ffi_conf.set('HAVE_MKOSTEMP', cc.has_function('mkostemp'))
 
 # Misc headers
 ffi_conf.set10('HAVE_ALLOCA_H', cc.has_header('alloca.h'))
 ffi_conf.set('HAVE_INTTYPES_H', cc.has_header('inttypes.h'))
 ffi_conf.set('HAVE_STDINT_H', cc.has_header('stdint.h'))
-ffi_conf.set('HAVE_SYS_MEMFD_H', cc.has_header('sys/memfd.h'))
+#ffi_conf.set('HAVE_SYS_MEMFD_H', cc.has_header('sys/memfd.h'))
 # Checks in the configure file that aren't used
 #ffi_conf.set10('HAVE_DLFCN_H', cc.has_header('dlfcn.h'))
 #ffi_conf.set10('HAVE_MEMORY_H', cc.has_header('memory.h'))
